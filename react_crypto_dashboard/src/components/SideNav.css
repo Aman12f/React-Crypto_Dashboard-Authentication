@@ -1,0 +1,26 @@
+.sidebar-menu .nav-link {
+    color: black !important;  /* Default color for sidebar items */
+  }
+  .graph_tab{
+    /* border: 2px solid yellow; */
+    padding: 6px;
+  }
+
+  .sidebar-menu .nav-link {
+    color: inherit; /* Inherit text color */
+    width: 100%; /* Set the width to 100% */
+  }
+  
+  .sidebar-menu .nav-link:hover,
+  .sidebar-menu .nav-link:focus,
+  .sidebar-menu .nav-link:active,
+  .sidebar-menu .nav-link.active {
+    background-color: #F3F3F7 !important; /* Override any other styles */
+    color: inherit; /* Inherit text color */
+    border: none; /* Remove border if any */
+    outline: none; /* Remove outline if any */
+  }
+  
+  .sidebarList{
+    width: 100%;
+  }

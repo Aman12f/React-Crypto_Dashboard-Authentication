@@ -1,0 +1,12 @@
+.nav-link{
+    /* border:"2px solid red" */
+    color: #797E82;
+    font-size: 12px;
+    font-weight: 500;
+    
+}
+.btn{
+    height: 40px;
+    font-weight: 500;
+    font-size: 14px;
+}
