@@ -40,25 +40,28 @@ The **React Crypto Dashboard** is designed to help users manage their cryptocurr
 
 ## 📸 Screenshots
 
-1. **Sign In**  
-   ![Sign In](https://github.com/Aman12f/React-Crypto_Dashboard-Authentication/blob/main/react_crypto_dashboard/src/components/images/Signin.jpeg?raw=true)
+1. **Sign Up**  
+   ![Sign Up](https://github.com/Aman12f/React-Crypto_Dashboard-Authentication/blob/main/react_crypto_dashboard/src/components/images/Create-New-Account.jpeg?raw=true)
+   
+2. **Sign In**  
+   ![Sign In](https://github.com/Aman12f/React-Crypto_Dashboard-Authentication/blob/main/react_crypto_dashboard/src/components/images/Sing-In.jpeg?raw=true)
 
-2. **Dashboard**  
+3. **Dashboard**  
    ![Dashboard](https://github.com/Aman12f/React-Crypto_Dashboard-Authentication/blob/main/react_crypto_dashboard/src/components/images/Dashboard.jpeg?raw=true)
 
-3. **Transactions**  
+4. **Transactions**  
    ![Transactions](https://github.com/Aman12f/React-Crypto_Dashboard-Authentication/blob/main/react_crypto_dashboard/src/components/images/Transactions.jpeg?raw=true)
 
-4. **Support**  
+5. **Support**  
    ![Support](https://github.com/Aman12f/React-Crypto_Dashboard-Authentication/blob/main/react_crypto_dashboard/src/components/images/Support.jpeg?raw=true)
 
-5. **Forgot Password**  
+6. **Forgot Password**  
    ![Forgot Password](https://github.com/Aman12f/React-Crypto_Dashboard-Authentication/blob/main/react_crypto_dashboard/src/components/images/Forgot-Password.jpeg?raw=true)
 
-6. **Reset Password**  
+7. **Reset Password**  
    ![Reset Password](https://github.com/Aman12f/React-Crypto_Dashboard-Authentication/blob/main/react_crypto_dashboard/src/components/images/Reset-Password.jpeg?raw=true)
 
-7. **Password Reset Done**  
+8. **Password Reset Done**  
    ![Password Reset Done](https://github.com/Aman12f/React-Crypto_Dashboard-Authentication/blob/main/react_crypto_dashboard/src/components/images/Password-Reset-Done.jpeg?raw=true)
 
 ## 🌐 Live Demo
