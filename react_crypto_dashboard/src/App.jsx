@@ -28,6 +28,7 @@ import {
   QueryClientProvider,
 } from 'react-query'
 
+// const [title_name, setTitle_name] = useState("");
 const App = () => {
   
   const [title, setTitle] = useState("")
@@ -45,14 +46,14 @@ const App = () => {
             <Route path="/dashboard" element={<Protectedroute><Dashboard setTitle={setTitle}></Dashboard></Protectedroute>} />
             <Route path="/transactions" element={<Protectedroute><Transaction setTitle={setTitle}/></Protectedroute>} />
             <Route path="/support" element={<Protectedroute><SupportCard setTitle={setTitle}></SupportCard></Protectedroute>} />
-            <Route path="/signup" element={<SignUp></SignUp>} />
-            <Route path="/signin" element={<SignIn></SignIn>} />
-            <Route path="/registeremailverify/:email" element={<RegisterEmailVerify></RegisterEmailVerify>} />
-            <Route path="/email-verify/:token" element={<RegisterSuccess></RegisterSuccess>} />
-            <Route path="/forgotpassword" element={<ForgotPassword></ForgotPassword>} />
-            <Route path="/forgotpasswordsent/:email" element={<ForgotPasswordSent></ForgotPasswordSent>} />
-            <Route path="/resetpassworddone" element={<ResetPasswordDone></ResetPasswordDone>} />
-            <Route path="/forgot-password-verify/:token" element={<ResetPassword></ResetPassword>} />
+            <Route path="/signup" element={<SignUp setTitle={setTitle}></SignUp>}/>
+            <Route path="/signin" element={<SignIn setTitle={setTitle}></SignIn>}/>
+            <Route path="/registeremailverify/:email" element={<RegisterEmailVerify setTitle={setTitle}></RegisterEmailVerify>} />
+            <Route path="/email-verify/:token" element={<RegisterSuccess setTitle={setTitle}></RegisterSuccess>} />
+            <Route path="/forgotpassword" element={<ForgotPassword setTitle={setTitle}></ForgotPassword>} />
+            <Route path="/forgotpasswordsent/:email" element={<ForgotPasswordSent setTitle={setTitle}></ForgotPasswordSent>} />
+            <Route path="/resetpassworddone" element={<ResetPasswordDone setTitle={setTitle}></ResetPasswordDone>} />
+            <Route path="/forgot-password-verify/:token" element={<ResetPassword setTitle={setTitle}></ResetPassword>} />
           </Route>
         </Routes>
       </BrowserRouter>

@@ -8,7 +8,8 @@ import { ToastContainer, toast, Bounce } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import useAuth from "../../../hooks/useAuth";
 import { useNavigate } from "react-router-dom";
-const SignIn = () => {
+import { useEffect } from "react";
+const SignIn = (props) => {
   const navigate = useNavigate();
   let signUpValidationSchema = object({
     email: string().email().required(),
@@ -38,6 +39,9 @@ const SignIn = () => {
     }
   })
    
+  useEffect(() => {
+    props.setTitle("");
+ }, [])
   return (
     <>
       <div className="d-flex justify-content-center align-items-center" style={{height:"100%"}}>

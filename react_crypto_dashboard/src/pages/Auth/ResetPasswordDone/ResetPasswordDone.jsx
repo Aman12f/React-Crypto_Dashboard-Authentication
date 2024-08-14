@@ -3,8 +3,12 @@ import { BsFillPatchCheckFill } from "react-icons/bs";
 import { NavLink } from 'react-router-dom';
 import { ToastContainer, toast, Bounce } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { useEffect } from 'react';
 
-const ResetPasswordDone = () => {
+const ResetPasswordDone = (props) => {
+  useEffect(() => {
+    props.setTitle("");
+ }, [])
   return (
     <>
     <div className="border d-flex justify-content-center align-items-center" style={{height:"100%"}}>

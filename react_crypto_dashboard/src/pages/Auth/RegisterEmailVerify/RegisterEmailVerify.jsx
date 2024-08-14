@@ -8,7 +8,7 @@ import { useQuery } from "react-query";
 import { sendVerificationMail } from "../../../api/query/userQuery";
 import { useEffect } from "react";
 
-const RegisterEmailVerify = () => {
+const RegisterEmailVerify = (props) => {
   // const location = useLocation();
    const {email} = useParams()
   // const email = location.state?.email ?? "test@gmail.com"; // Add optional chaining to safely access state
@@ -34,6 +34,9 @@ const RegisterEmailVerify = () => {
   // if(isLoading){
   //   // TODO : ADD SPINNER COMPONENT 
   // }
+  useEffect(() => {
+    props.setTitle("");
+ }, [])
 
   return (
     <>

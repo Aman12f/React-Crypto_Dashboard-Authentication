@@ -8,10 +8,10 @@ import 'react-toastify/dist/ReactToastify.css';
 import { useMutation } from "react-query";
 import { signupUser } from "../../../api/query/userQuery";
 import { useNavigate } from "react-router-dom";
-// import { useState } from "react";
+import { useEffect } from "react";
   
 
-const SignUp = () => {
+const SignUp = (props) => {
   
   // const [email, setEmail] = useState("")
 
@@ -40,6 +40,10 @@ const SignUp = () => {
       toast.error(`SignUp Error: ${error.message}`);
     }
   })
+  useEffect(() => {
+     props.setTitle("");
+  }, [])
+  
 
   return (
     <>

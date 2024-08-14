@@ -7,7 +7,8 @@ import { useQuery } from 'react-query';
 import { ToastContainer, toast, Bounce } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useNavigate } from 'react-router-dom';
-const RegisterSuccess = () => {
+import { useEffect } from 'react';
+const RegisterSuccess = (props) => {
   
   const navigate = useNavigate()
   const {token} = useParams();
@@ -28,6 +29,9 @@ const RegisterSuccess = () => {
     // TODO : SPINNER 
     <div>Loading</div>
   }
+  useEffect(() => {
+    props.setTitle("");
+ }, [])
   
 
   return (

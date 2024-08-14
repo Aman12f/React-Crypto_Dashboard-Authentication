@@ -6,8 +6,9 @@ import { useNavigate } from 'react-router-dom';
 import { useMutation} from 'react-query';
 import { verifyForgotToken } from '../../../api/query/userQuery';
 import { useParams } from 'react-router-dom';
+import { useEffect } from 'react';
 
-const ResetPassword = () => {
+const ResetPassword = (props) => {
 
 
   const navigate = useNavigate()
@@ -32,6 +33,9 @@ const ResetPassword = () => {
     // TODO : SPINNER 
     <div>Loading</div>
   }
+  useEffect(() => {
+    props.setTitle("");
+ }, [])
 
 
   let repeatPasswordSchema = object({
